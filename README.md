@@ -5,4 +5,4 @@
 Студенты - Железной Алексей Сергеевич, Бобраков Андрей Сергеевич.
 
 
-Ссылка на Trello Board нашей команды https://trello.com/b/jASpJyxw
+Ссылка на Trello Board нашей команды: https://trello.com/b/jASpJyxw

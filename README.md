@@ -6,3 +6,4 @@
 
 
 Ссылка на Trello Board нашей команды: https://trello.com/b/jASpJyxw
+Ссылка на realtimeboard (Miro) нашей команды: https://realtimeboard.com/app/account/team/3074457346523017917/settings/

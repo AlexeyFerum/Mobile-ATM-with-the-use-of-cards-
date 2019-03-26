@@ -1,9 +1,5 @@
-# "Mobile ATM with the use of" cards "
+# Mobile ATM with the use of "cards"
 a project for Programming Technologies course
-
-# Team:
-ВГУ, ФКН, 3 курс, 2.2 группа "ОИиМО".
-Студенты - Железной Алексей Сергеевич, Бобраков Андрей Сергеевич.
 
 # Introduction
 
@@ -12,3 +8,7 @@ a project for Programming Technologies course
 
 # Trello
  https://trello.com/b/jASpJyxw
+
+# Team:
+ВГУ, ФКН, 3 курс, 2.2 группа "ОИиМО".
+Студенты - Железной Алексей Сергеевич, Бобраков Андрей Сергеевич.

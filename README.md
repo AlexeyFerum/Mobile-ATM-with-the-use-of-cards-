@@ -1,11 +1,14 @@
 # "Mobile ATM with the use of" cards "
+a project for Programming Technologies course
 
+# Team:
 ВГУ, ФКН, 3 курс, 2.2 группа "ОИиМО".
-Тема проекта - "Мобильный банкомат с использованием "карточек".
 Студенты - Железной Алексей Сергеевич, Бобраков Андрей Сергеевич.
 
+# Introduction
 
-Ссылка на Trello Board нашей команды: https://trello.com/b/jASpJyxw
+# Requirement Specification
+ https://realtimeboard.com/app/account/team/3074457346523017917/settings/
 
-
-Ссылка на realtimeboard (Miro) нашей команды: https://realtimeboard.com/app/account/team/3074457346523017917/settings/
+# Trello
+ https://trello.com/b/jASpJyxw

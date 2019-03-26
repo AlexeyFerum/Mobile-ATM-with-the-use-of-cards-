@@ -1,4 +1,4 @@
-# Programming-technology
+# "Mobile ATM with the use of" cards "
 
 ВГУ, ФКН, 3 курс, 2.2 группа "ОИиМО".
 Тема проекта - "Мобильный банкомат с использованием "карточек".

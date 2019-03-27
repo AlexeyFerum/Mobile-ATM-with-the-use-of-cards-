@@ -2,7 +2,7 @@
 a project for Programming Technologies course
 
 # Functional diagram
- https://realtimeboard.com/app/account/team/3074457346523017917/settings/
+ https://realtimeboard.com/app/board/o9J_kxmX8yU=/
 
 # Trello
  https://trello.com/b/jASpJyxw

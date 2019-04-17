@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace MobileATM_Library
 {
-    public class Class1
+    public class Client
     {
+        int clientId;
+        string surname;
+        string name;
+
+
     }
 }

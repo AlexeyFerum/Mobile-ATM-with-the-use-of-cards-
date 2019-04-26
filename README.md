@@ -1,4 +1,4 @@
-# All docs are in the "Docs folder"
+# All docs are in the "Docs" folder
 
 
 # Mobile ATM with the use of "cards"

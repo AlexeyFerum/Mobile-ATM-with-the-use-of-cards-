@@ -1,7 +1,8 @@
+# All docs are in the "Docs folder"
+
+
 # Mobile ATM with the use of "cards"
 a project for Programming Technologies course
-
-# All docs are in the "Docs folder"
 
 # Functional diagram
  https://realtimeboard.com/app/board/o9J_kxmX8yU=/

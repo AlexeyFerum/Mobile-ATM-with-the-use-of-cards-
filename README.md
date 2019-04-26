@@ -6,6 +6,8 @@ a project for Programming Technologies course
 
 # Trello
  https://trello.com/b/jASpJyxw
+ 
+# All docs are in the "Docs folder"
 
 # Team:
 ВГУ, ФКН, 3 курс, 2.2 группа "ОИиМО".

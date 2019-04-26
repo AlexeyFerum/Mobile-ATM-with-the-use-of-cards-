@@ -6,16 +6,16 @@ namespace MobileATM_Library
 {
     public class Arduino
     {
-        string cardNumber;
+        private string cardNumber;
 
-        string CardNumber
+        public string CardNumber
         {
             get
             {
                 return CardNumber;
             }
 
-            set
+            private set
             {
                 cardNumber = value;
             }
@@ -52,13 +52,5 @@ namespace MobileATM_Library
 
             return cardNumber;
         }
-
-        //public static void Main()
-        //{
-        //    Arduino myArduino = new Arduino();
-        //    myArduino.requestCardNumber();
-
-        //    Console.ReadKey();
-        //}
     }
 }

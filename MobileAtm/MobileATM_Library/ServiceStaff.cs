@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MobileATM_Library
 {
-    public class Client
-    { 
+    public class ServiceStaff
+    {
         private string name;
         private string surname;
-        private List<Account> accountList;
+        private short pin;
 
         public string Name
         {
@@ -32,19 +32,21 @@ namespace MobileATM_Library
                 return surname;
             }
 
-            set
+            private set
             {
                 surname = value;
             }
         }
 
-        public Client(string name, string surname)
+        public ServiceStaff(string name, string surname, short pin)
         {
-            accountList = new List<Account>();
             this.name = name;
             this.surname = surname;
+            this.pin = pin;
         }
 
-        public void addAccount() { }
+        public bool isCorrectPin() { return true; }
+
+        public void Repair() { }
     }
 }

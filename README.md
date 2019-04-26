@@ -1,4 +1,4 @@
-# All docs are in the "Docs" folder
+# All documents are in the "Docs" folder. Diagrams and database scheme included the "Introduction" document.
 
 
 # Mobile ATM with the use of "cards"

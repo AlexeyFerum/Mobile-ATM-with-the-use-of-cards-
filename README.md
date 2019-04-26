@@ -1,3 +1,6 @@
+# All docs are in the "Docs" folder
+
+
 # Mobile ATM with the use of "cards"
 a project for Programming Technologies course
 
@@ -6,7 +9,7 @@ a project for Programming Technologies course
 
 # Trello
  https://trello.com/b/jASpJyxw
-
+ 
 # Team:
 ВГУ, ФКН, 3 курс, 2.2 группа "ОИиМО".
 Студенты - Железной Алексей Сергеевич, Бобраков Андрей Сергеевич.

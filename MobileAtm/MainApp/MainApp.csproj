@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MobileATM_Server_Library">
+      <HintPath>..\..\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

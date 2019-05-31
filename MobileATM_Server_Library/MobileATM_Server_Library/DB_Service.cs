@@ -2,8 +2,6 @@
 {
     class DB_Service
     {
-
-
         public DB_Service()
         {
 

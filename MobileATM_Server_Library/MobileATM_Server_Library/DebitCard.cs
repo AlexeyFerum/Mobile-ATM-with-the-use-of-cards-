@@ -4,14 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobileATM_Library
+namespace MobileATM_Server_Library
 {
     class DebitCard
     {
         private double balance;
 
-        public void withdraw(double amount) { }
+        public void withdraw(double amount)
+        {
 
-        public void deposit(double amount) { }
+        }
+
+        public void deposit(double amount)
+        {
+
+        }
     }
 }

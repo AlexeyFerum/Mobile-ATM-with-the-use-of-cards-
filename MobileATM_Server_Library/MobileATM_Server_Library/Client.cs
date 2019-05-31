@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MobileATM_Library
+namespace MobileATM_Server_Library
 {
     public class Client
     {
@@ -29,6 +29,9 @@ namespace MobileATM_Library
             this.surname = surname;
         }
 
-        public void addAccount() { }
+        public void addAccount()
+        {
+
+        }
     }
 }

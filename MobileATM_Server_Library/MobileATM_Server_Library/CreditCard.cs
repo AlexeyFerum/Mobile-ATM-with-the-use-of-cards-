@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobileATM_Library
+namespace MobileATM_Server_Library
 {
     public class CreditCard : Account
     {
@@ -20,8 +20,14 @@ namespace MobileATM_Library
             this.period = period;
         }
 
-        public void addPayment(DateTime dateOfInitiation, double amount) { }
+        public void addPayment(DateTime dateOfInitiation, double amount)
+        {
 
-        public void Repayment(DateTime dateOfRepayment, double amount) { }
+        }
+
+        public void Repayment(DateTime dateOfRepayment, double amount)
+        {
+
+        }
     }
 }

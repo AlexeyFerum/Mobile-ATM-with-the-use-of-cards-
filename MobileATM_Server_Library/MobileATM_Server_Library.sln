@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileATM_Server_Library", "MobileATM_Server_Library\MobileATM_Server_Library.csproj", "{ADDC9F78-F414-465F-AAE4-15EBE47CE6E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSQLServer", "ConnectSQLServer\ConnectSQLServer.csproj", "{082D579E-237E-4486-8EF6-E9722B5CA340}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ADDC9F78-F414-465F-AAE4-15EBE47CE6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADDC9F78-F414-465F-AAE4-15EBE47CE6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADDC9F78-F414-465F-AAE4-15EBE47CE6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082D579E-237E-4486-8EF6-E9722B5CA340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082D579E-237E-4486-8EF6-E9722B5CA340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082D579E-237E-4486-8EF6-E9722B5CA340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082D579E-237E-4486-8EF6-E9722B5CA340}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobileATM_Library
+namespace MobileATM_Server_Library
 {
     public class Detail
     {

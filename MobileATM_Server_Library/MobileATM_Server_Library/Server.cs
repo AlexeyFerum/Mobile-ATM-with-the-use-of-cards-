@@ -11,9 +11,10 @@ namespace MobileATM_Server_Library
         private IPAddress ipAddr;
         private IPEndPoint ipEndPoint;
         private Client client = null;
+        private DB_Service db;
 
 
-        public void Main(string[] args)
+        public void StartWorking()
         {
             // Создаем сокет Tcp/Ip
             Socket sListener = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
@@ -45,7 +46,7 @@ namespace MobileATM_Server_Library
             }
         }
 
-        private Server()
+        public Server()
         {
             // Устанавливаем для сокета локальную конечную точку
             ipHost = Dns.GetHostEntry("localhost");
@@ -102,6 +103,8 @@ namespace MobileATM_Server_Library
                             handler.Close();
                             res = "Successfuly closed socket";
                             Console.WriteLine("Successfuly closed socket");
+                            client = null;
+                            Console.WriteLine("Client was deleted");
                         }
                         catch (ObjectDisposedException ex)
                         {
@@ -138,8 +141,17 @@ namespace MobileATM_Server_Library
 
         private string CheckClient(string number)
         {
-
-            return null;
+            string res = "Error";
+            if (number != null)
+            {
+                res = db.CheckClient(number);
+            }
+            if(res == "Exist")
+            {
+                client = CreateClient(number);
+                Console.WriteLine("Client has created");   
+            }
+            return res;
         }
 
         private string GetBalance()
@@ -147,6 +159,9 @@ namespace MobileATM_Server_Library
             return null;
         }
 
-
+        private Client CreateClient(string num)
+        {
+            return null;
+        }
     }
 }

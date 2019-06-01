@@ -50,5 +50,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MobileATM_Server_Library\MobileATM_Server_Library.csproj">
+      <Project>{addc9f78-f414-465f-aae4-15ebe47ce6e8}</Project>
+      <Name>MobileATM_Server_Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

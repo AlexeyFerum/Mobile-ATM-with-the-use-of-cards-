@@ -12,3 +12,10 @@ D:\AlexFerum\NewSketch\Programming-technology\MobileATM_Server_Library\Connect\o
 D:\AlexFerum\NewSketch\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csproj.CoreCompileInputs.cache
 D:\AlexFerum\NewSketch\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.exe
 D:\AlexFerum\NewSketch\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.pdb
+D:\Документы\Аттестации\3 курс\6 семестр\TP 3\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.exe.config
+D:\Документы\Аттестации\3 курс\6 семестр\TP 3\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.exe
+D:\Документы\Аттестации\3 курс\6 семестр\TP 3\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.pdb
+D:\Документы\Аттестации\3 курс\6 семестр\TP 3\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csprojAssemblyReference.cache
+D:\Документы\Аттестации\3 курс\6 семестр\TP 3\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csproj.CoreCompileInputs.cache
+D:\Документы\Аттестации\3 курс\6 семестр\TP 3\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.exe
+D:\Документы\Аттестации\3 курс\6 семестр\TP 3\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.pdb

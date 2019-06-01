@@ -10,15 +10,8 @@ namespace MobileATM_Library
 
         public string CardNumber
         {
-            get
-            {
-                return CardNumber;
-            }
-
-            private set
-            {
-                cardNumber = value;
-            }
+            get => CardNumber;
+            private set => cardNumber = value;
         }
 
         public string requestCardNumber()
@@ -36,7 +29,8 @@ namespace MobileATM_Library
 
                 arduinoPort.Open();
                 Console.WriteLine("Attach card: ");
-                var data = arduinoPort.ReadLine();
+                var data = "";
+				data = arduinoPort.ReadLine();
 
                 while (t)
                 {
@@ -48,6 +42,7 @@ namespace MobileATM_Library
 
                 Console.WriteLine($"Received: {data}");
                 cardNumber = data;
+				arduinoPort.Close();
             }
 
             return cardNumber;

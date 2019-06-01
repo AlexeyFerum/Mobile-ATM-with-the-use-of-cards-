@@ -1,0 +1,7 @@
+D:\Sketch\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.exe.config
+D:\Sketch\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.exe
+D:\Sketch\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.pdb
+D:\Sketch\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csproj.CoreCompileInputs.cache
+D:\Sketch\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.exe
+D:\Sketch\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.pdb
+D:\Sketch\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csprojAssemblyReference.cache

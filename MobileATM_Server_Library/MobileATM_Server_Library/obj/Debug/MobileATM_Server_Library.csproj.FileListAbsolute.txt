@@ -1,0 +1,13 @@
+D:\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.dll
+D:\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.pdb
+D:\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.csprojAssemblyReference.cache
+D:\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.csproj.CoreCompileInputs.cache
+D:\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.dll
+D:\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.pdb
+D:\Sketch\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.dll.config
+D:\Sketch\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.dll
+D:\Sketch\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.pdb
+D:\Sketch\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.csprojAssemblyReference.cache
+D:\Sketch\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.csproj.CoreCompileInputs.cache
+D:\Sketch\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.dll
+D:\Sketch\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.pdb

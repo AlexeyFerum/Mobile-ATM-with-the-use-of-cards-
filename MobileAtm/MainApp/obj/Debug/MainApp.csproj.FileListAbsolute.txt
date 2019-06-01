@@ -1,0 +1,15 @@
+D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.csprojAssemblyReference.cache
+D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.MainApp.resources
+D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.Properties.Resources.resources
+D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.csproj.GenerateResource.cache
+D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.csproj.CoreCompileInputs.cache
+D:\Programming-technology\MobileAtm\MainApp\bin\Debug\MainApp.exe.config
+D:\Programming-technology\MobileAtm\MainApp\bin\Debug\MainApp.exe
+D:\Programming-technology\MobileAtm\MainApp\bin\Debug\MainApp.pdb
+D:\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Library.dll
+D:\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Server_Library.dll
+D:\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Library.pdb
+D:\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Server_Library.pdb
+D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.csproj.CopyComplete
+D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.exe
+D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.pdb

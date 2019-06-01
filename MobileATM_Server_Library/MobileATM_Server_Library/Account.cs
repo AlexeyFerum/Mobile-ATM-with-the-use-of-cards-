@@ -9,7 +9,7 @@ namespace MobileATM_Server_Library
     public class Account
     {
         protected static bool type;
-        int number;
+        protected string number;
 
         protected Account(bool type)
         {
@@ -23,5 +23,6 @@ namespace MobileATM_Server_Library
                 return type;
             }
         }
+
     }
 }

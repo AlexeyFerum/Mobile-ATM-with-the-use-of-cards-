@@ -33,7 +33,6 @@ namespace MobileATM_Server_Library
         private List<string> QueryDB(string query)
         {
             List<string> res = new List<string>();
-            res = null;
 
             DbCommand command = factory.CreateCommand();
 
@@ -65,12 +64,27 @@ namespace MobileATM_Server_Library
 
         public string CheckClient(string number)
         {
-            string command = "Select client_id from Client where account_id = " + $"{number}";
-            if(QueryDB(command) != null)
+            string command = "Select * from Client where account_id = " + $"{number}";
+            List<string> res = QueryDB(command);
+            if(res.Count != 0)
             {
                 return "Exist";
             }
             return "Doesn't exist";
+        }
+
+        public List<string> GetClientInformation(string number)
+        {
+            string command = "Select * from Client where account_id = " + $"{number}";
+            List<string> res = QueryDB(command);
+            return res;
+        }
+
+        public List<string> GetAccountInformation(string number)
+        {
+            string command = "Select * from Account where account_id = " + $"{number}";
+            List<string> res = QueryDB(command);
+            return res;
         }
 
     }

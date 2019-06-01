@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace MobileATM_Server_Library
 {
-    class DebitCard
+    class DebitCard: Account
     {
         private double balance;
+
+        public DebitCard(string number, double balance) : base(type)
+        {
+            this.balance = balance;
+            this.number = number;
+        }
 
         public void withdraw(double amount)
         {

@@ -14,10 +14,10 @@ namespace MobileATM_Server_Library
         private double balance;
         private short period;
 
-        public CreditCard(double balance, short period) : base(type)
+        public CreditCard(string number, double balance) : base(type)
         {
             this.balance = balance;
-            this.period = period;
+            this.number = number;
         }
 
         public void addPayment(DateTime dateOfInitiation, double amount)

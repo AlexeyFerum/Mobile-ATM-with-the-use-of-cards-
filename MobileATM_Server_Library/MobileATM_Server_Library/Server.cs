@@ -2,6 +2,7 @@
 using System.Text;
 using System.Net;
 using System.Net.Sockets;
+using System.Collections.Generic;
 
 namespace MobileATM_Server_Library
 {
@@ -48,6 +49,7 @@ namespace MobileATM_Server_Library
 
         public Server()
         {
+            db = new DB_Service();
             // Устанавливаем для сокета локальную конечную точку
             ipHost = Dns.GetHostEntry("localhost");
             ipAddr = ipHost.AddressList[0];
@@ -161,6 +163,21 @@ namespace MobileATM_Server_Library
 
         private Client CreateClient(string num)
         {
+            List<string> dataC = db.GetClientInformation(num);
+            List<string> dataA = db.GetAccountInformation(num);
+            Account account;
+            if (Convert.ToInt32(dataA[2]) == 0)
+            {
+                account = new DebitCard(dataA[0], Convert.ToDouble(dataA[1]));
+                Console.WriteLine("Debit card created");
+            }
+            else
+            {
+                account = new CreditCard(dataA[0], Convert.ToDouble(dataA[1]));
+                Console.WriteLine("Credit card created");
+            }
+            client = new Client(Convert.ToInt32(dataC[0]), dataC[1], account);
+
             return null;
         }
     }

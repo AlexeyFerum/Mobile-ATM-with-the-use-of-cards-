@@ -5,33 +5,24 @@ namespace MobileATM_Server_Library
     public class Client
     {
         private string name;
-        private string surname;
-        private List<Account> accountList;
+        private int id;
+        private Account account;
 
         public string Name
         {
             get => name;
-
-            private set => name = value;
         }
 
-        public string Surname
+        public int GetId()
         {
-            get => surname;
-
-            private set => surname = value;
+            return id;
         }
 
-        public Client(string name, string surname)
+        public Client(int id, string name, Account account)
         {
-            accountList = new List<Account>();
             this.name = name;
-            this.surname = surname;
-        }
-
-        public void addAccount()
-        {
-
+            this.id = id;
+            this.account = account;
         }
     }
 }

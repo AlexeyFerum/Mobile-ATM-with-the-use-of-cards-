@@ -1,6 +1,0 @@
-D:\Programming-technology\MobileAtm\MobileATM_Library\bin\Debug\MobileATM_Library.dll
-D:\Programming-technology\MobileAtm\MobileATM_Library\bin\Debug\MobileATM_Library.pdb
-D:\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.csprojAssemblyReference.cache
-D:\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.csproj.CoreCompileInputs.cache
-D:\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.dll
-D:\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.pdb

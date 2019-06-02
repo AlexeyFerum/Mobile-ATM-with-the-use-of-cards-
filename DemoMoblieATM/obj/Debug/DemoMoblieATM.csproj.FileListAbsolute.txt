@@ -1,0 +1,14 @@
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\bin\Debug\DemoMoblieATM.exe.config
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\bin\Debug\DemoMoblieATM.exe
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\bin\Debug\DemoMoblieATM.pdb
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\bin\Debug\DemoMobileATM_Library.dll
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\bin\Debug\DemoMobileATM_Library.pdb
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.csprojAssemblyReference.cache
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.MainForm.resources
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.Properties.Resources.resources
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.csproj.GenerateResource.cache
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.csproj.CoreCompileInputs.cache
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.csproj.CopyComplete
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.exe
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.pdb
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.InputNumForm.resources

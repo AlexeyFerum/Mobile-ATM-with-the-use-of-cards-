@@ -213,7 +213,6 @@
             this.Controls.Add(this.tbInsert);
             this.Controls.Add(this.btnInsert);
             this.Name = "InputNumForm";
-            this.Text = "InputNumForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

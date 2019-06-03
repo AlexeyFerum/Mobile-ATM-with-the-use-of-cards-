@@ -12,3 +12,4 @@ C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieAT
 C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.exe
 C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.pdb
 C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.InputNumForm.resources
+C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMoblieATM\obj\Debug\DemoMoblieATM.ServiceStaffForm.resources

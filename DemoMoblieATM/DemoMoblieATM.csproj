@@ -61,6 +61,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceStaffForm.Designer.cs">
+      <DependentUpon>ServiceStaffForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="InputNumForm.resx">
       <DependentUpon>InputNumForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +82,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ServiceStaffForm.resx">
+      <DependentUpon>ServiceStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

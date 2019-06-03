@@ -48,6 +48,7 @@
     <Compile Include="DbService.cs" />
     <Compile Include="DebitCard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceStaff.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

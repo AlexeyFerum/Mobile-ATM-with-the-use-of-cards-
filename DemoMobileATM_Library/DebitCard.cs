@@ -1,4 +1,6 @@
-﻿namespace DemoMobileATM_Library
+﻿using System;
+
+namespace DemoMobileATM_Library
 {
     public class DebitCard : Account
     {
@@ -18,29 +20,32 @@
         {
             if (sum > DEPOSIT_SUM)
             {
-                return "Impossible to deposit more than 100,000 at a time";
+                return "Impossible to deposit more than 100,000 at a time" + "|";
             }
 
             _balance += sum;
 
-            return $"Update Account set balance='{_balance}' where account_id='{_id}'";
+            return $"Update Account set balance='{_balance}' where account_id='{_id}'" + "|"
+                   + "Insert into Transaction values " +
+                   $"(transaction_type='Deposit', transaction_date='{DateTime.Now.Day}', account_id='{_id}')";
         }
 
         public override string Withdraw(int sum)
         {
             if (sum > _balance)
             {
-                return "Insufficient funds in the account";
+                return "Insufficient funds in the account" + "|";
             }
 
             if (sum > WITHDRAW_SUM)
             {
-                return "Impossible to withdraw more than 50,000 at a time";
+                return "Impossible to withdraw more than 50,000 at a time" + "|";
             }
 
             _balance -= sum;
 
-            return $"Update Account set balance='{_balance}' where account_id='{_id}'";
+            return $"Update Account set balance='{_balance}' where account_id='{_id}'" + "|"
+                   + "Insert into Transaction [(transaction_type, transaction_date, account_id)] {values ('Withdraw', " + $"{DateTime.Now.Day}, '{_id}')" + "}";
         }
     }
 }

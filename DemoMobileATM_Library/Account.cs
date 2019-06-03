@@ -15,7 +15,7 @@
         public virtual int Balance { get; set; }
         public short Type { get => _type; set => _type = value; }
 
-        public virtual string Withdraw(int sum) => "Error";
-        public virtual string Deposit(int sum) => "Error";
+        public virtual string Withdraw(int sum) => null;
+        public virtual string Deposit(int sum) => null;
     }
 }

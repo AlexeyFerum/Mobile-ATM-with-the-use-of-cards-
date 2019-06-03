@@ -31,8 +31,9 @@
             this.btnCheck = new System.Windows.Forms.Button();
             this.btnRepair = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.dgvDeviceData = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDeviceData)).BeginInit();
+            this.dgvDeviceCondition = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDeviceCondition)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCheck
@@ -64,27 +65,38 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // dgvDeviceData
+            // dgvDeviceCondition
             // 
-            this.dgvDeviceData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDeviceData.Location = new System.Drawing.Point(12, 12);
-            this.dgvDeviceData.Name = "dgvDeviceData";
-            this.dgvDeviceData.Size = new System.Drawing.Size(267, 166);
-            this.dgvDeviceData.TabIndex = 3;
+            this.dgvDeviceCondition.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDeviceCondition.Location = new System.Drawing.Point(12, 12);
+            this.dgvDeviceCondition.Name = "dgvDeviceCondition";
+            this.dgvDeviceCondition.Size = new System.Drawing.Size(240, 150);
+            this.dgvDeviceCondition.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(57, 195);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
             // 
             // ServiceStaffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 261);
-            this.Controls.Add(this.dgvDeviceData);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgvDeviceCondition);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnRepair);
             this.Controls.Add(this.btnCheck);
             this.Name = "ServiceStaffForm";
             this.Text = "MobileATM (Service staff mode)";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDeviceData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDeviceCondition)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -93,6 +105,7 @@
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Button btnRepair;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.DataGridView dgvDeviceData;
+        private System.Windows.Forms.DataGridView dgvDeviceCondition;
+        private System.Windows.Forms.Label label1;
     }
 }

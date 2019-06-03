@@ -1,5 +1,6 @@
 ﻿using DemoMobileATM_Library;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace DemoMoblieATM
@@ -66,14 +67,17 @@ namespace DemoMoblieATM
 
             InputNumForm inputNumForm = new InputNumForm(this);
             inputNumForm.ShowDialog();
-            var commandText = mainAccount.Withdraw(Convert.ToInt32(inputNumForm.Data));
+            var commandText = mainAccount.Withdraw(Convert.ToInt32(inputNumForm.Data)).Split('|');
 
-            if (!commandText.Contains("Update"))
+            if (!commandText[0].Contains("Update"))
             {
-                lblError.Text = commandText;
+                lblError.Text = commandText[0];
             }
             else
-                mainDbService.UpdateData(commandText);
+            {
+                mainDbService.UpdateData(commandText[0]);
+                //mainDbService.UpdateData(commandText[1]);
+            }
         }
 
         private void btnDeposit_Click(object sender, EventArgs e)
@@ -82,14 +86,18 @@ namespace DemoMoblieATM
 
             InputNumForm newForm = new InputNumForm(this);
             newForm.ShowDialog();
-            var commandText = mainAccount.Deposit(Convert.ToInt32(newForm.Data));
+            var commandText = mainAccount.Deposit(Convert.ToInt32(newForm.Data)).Split('|');
 
-            if (!commandText.Contains("Update"))
+            if (!commandText[0].Contains("Update"))
             {
-                lblError.Text = commandText;
+                lblError.Text = commandText[0];
             }
             else
-                mainDbService.UpdateData(commandText);
+            {
+                mainDbService.UpdateData(commandText[0]);
+                //mainDbService.UpdateData(commandText[1]);
+            }
+
         }
 
         private void btnStaff_Click(object sender, EventArgs e)
@@ -103,6 +111,16 @@ namespace DemoMoblieATM
             var serviceStaffDataList = mainDbService.GetDataList(
                 "Select * from ServiceStaff where password = " + passwordText);
 
+            var checkTapeDataList = mainDbService.GetDataList("Select * from Detail where name = 'Check tape'");
+            Detail checkTapeDetail = new Detail(Convert.ToInt32(checkTapeDataList[0]), checkTapeDataList[1], Convert.ToInt32(checkTapeDataList[2]));
+
+            var cartridgeDataList = mainDbService.GetDataList("Select * from Detail where name = 'Cartridge'");
+            Detail cartridgeDetail = new Detail(Convert.ToInt32(cartridgeDataList[0]), cartridgeDataList[1], Convert.ToInt32(cartridgeDataList[2]));
+
+            var detailsList = new List<Detail>() { checkTapeDetail, cartridgeDetail };
+
+            DeviceCondition deviceCondition = new DeviceCondition(detailsList);
+
             if (serviceStaffDataList.Count == 0)
             {
                 lblError.Text = "Wrong password.";
@@ -111,8 +129,8 @@ namespace DemoMoblieATM
             {
                 serviceStaff = new ServiceStaff(Convert.ToInt32(serviceStaffDataList[0]),
                     serviceStaffDataList[1], Convert.ToInt16(serviceStaffDataList[2]));
-
-                ServiceStaffForm serviceStaffForm = new ServiceStaffForm();
+                
+                var serviceStaffForm = new ServiceStaffForm(deviceCondition.DetailsList);
                 serviceStaffForm.ShowDialog();
             }
         }

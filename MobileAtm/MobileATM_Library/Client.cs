@@ -1,41 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace MobileATM_Library
 {
     public class Client
-    { 
+    {
         private string name;
         private string surname;
         private List<Account> accountList;
 
         public string Name
         {
-            get
-            {
-                return name;
-            }
+            get => name;
 
-            private set
-            {
-                name = value;
-            }
+            private set => name = value;
         }
 
         public string Surname
         {
-            get
-            {
-                return surname;
-            }
+            get => surname;
 
-            set
-            {
-                surname = value;
-            }
+            private set => surname = value;
         }
 
         public Client(string name, string surname)

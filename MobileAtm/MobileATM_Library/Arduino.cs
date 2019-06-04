@@ -10,15 +10,8 @@ namespace MobileATM_Library
 
         public string CardNumber
         {
-            get
-            {
-                return CardNumber;
-            }
-
-            private set
-            {
-                cardNumber = value;
-            }
+            get => CardNumber;
+            private set => cardNumber = value;
         }
 
         public string requestCardNumber()

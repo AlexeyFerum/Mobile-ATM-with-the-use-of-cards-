@@ -19,13 +19,14 @@ namespace DemoMoblieATM
 
         private void btn_Card_Click(object sender, EventArgs e)
         {
-            //var arduino = new Arduino();
-            var cardNumber = "25648484848655356495067483"; //arduino.RequestCardNumber();
+            var arduino = new Arduino();
+            var cardNumber = arduino.RequestCardNumber();  /*"25648484848655356495067483"; */
 
             (sender as Button).Enabled = false;
             btnBalance.Enabled = true;
             btnDeposit.Enabled = true;
             btnWithdraw.Enabled = true;
+            btnCancel.Enabled = true;
             btnStaff.Enabled = false;
 
             mainDbService = new DB_Service();
@@ -77,6 +78,7 @@ namespace DemoMoblieATM
             {
                 mainDbService.UpdateData(commandText[0]);
                 //mainDbService.UpdateData(commandText[1]);
+                //mainDbService.UpdateData(commandText[2]);
             }
         }
 
@@ -96,6 +98,7 @@ namespace DemoMoblieATM
             {
                 mainDbService.UpdateData(commandText[0]);
                 //mainDbService.UpdateData(commandText[1]);
+                //mainDbService.UpdateData(commandText[2]);
             }
 
         }
@@ -129,10 +132,31 @@ namespace DemoMoblieATM
             {
                 serviceStaff = new ServiceStaff(Convert.ToInt32(serviceStaffDataList[0]),
                     serviceStaffDataList[1], Convert.ToInt16(serviceStaffDataList[2]));
-                
+
                 var serviceStaffForm = new ServiceStaffForm(deviceCondition.DetailsList);
                 serviceStaffForm.ShowDialog();
+
+                mainDbService.UpdateData(serviceStaffForm.Data);
+
+                if (serviceStaffForm.Data.Contains("Check"))
+                {
+                    checkTapeDetail.Resource = 100;
+                    //mainDbService.UpdateData($"Insert into History values (date_of_visit='{DateTime.Now.Day}', detail_id=1', staff_id='{serviceStaff.Id}')");
+                }
+                else
+                {
+                    if (serviceStaffForm.Data.Contains("Cartridge"))
+                    {
+                        cartridgeDetail.Resource = 100;
+                        //mainDbService.UpdateData($"Insert into History values (date_of_visit='{DateTime.Now.Day}', detail_id=2', staff_id='{serviceStaff.Id}')");
+                    }
+                }
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

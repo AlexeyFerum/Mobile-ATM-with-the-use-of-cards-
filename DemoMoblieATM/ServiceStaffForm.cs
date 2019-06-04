@@ -1,13 +1,20 @@
-﻿using System;
+﻿using DemoMobileATM_Library;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using DemoMobileATM_Library;
 
 namespace DemoMoblieATM
 {
     public partial class ServiceStaffForm : Form
     {
         List<Detail> detailsList;
+
+        private string _data;
+        public string Data
+        {
+            get => _data;
+            set => _data = value;
+        }
 
         public ServiceStaffForm()
         {
@@ -22,19 +29,38 @@ namespace DemoMoblieATM
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
-            dgvDeviceCondition.ColumnCount = 3;
-            dgvDeviceCondition.RowCount = 2;
-
             Detail detail1 = detailsList[0];
             Detail detail2 = detailsList[1];
 
-            string[] row1 = {$"{detail1.Id}", $"{detail1.Name}", $"{detail1.Resource}"};
-            string[] row2 = { $"{detail2.Id}", $"{detail2.Name}", $"{detail2.Resource}" };
+            tbInput.Text = $"{detail1.Id} " + $"{detail1.Name} " + $"{detail1.Resource} " + "\r\n";
+            tbInput.Text += $"{detail2.Id} " + $"{detail2.Name} " + $"{detail2.Resource} ";
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnRepair_Click(object sender, EventArgs e)
+        {
+            if (rbCartridge.Checked)
+            {
+                Data = "Update Detail set detail_resource=100 where detail_id=2";
+            }
+            else
+            {
+                if (rbCheckTape.Checked)
+                {
+                    Data = "Update Detail set detail_resource=100 where detail_id=1"; ;
+                }
+                else
+                {
+                    if (rbCartridge.Checked && rbCheckTape.Checked)
+                    {
+                        Data = "Update Detail set detail_resource=100"; ;
+                    }
+                }
+            }
         }
     }
 }

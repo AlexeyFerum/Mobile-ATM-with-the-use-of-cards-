@@ -36,11 +36,12 @@
             this.btnBalance = new System.Windows.Forms.Button();
             this.lblBalance = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Card
             // 
-            this.btn_Card.Location = new System.Drawing.Point(413, 12);
+            this.btn_Card.Location = new System.Drawing.Point(224, 58);
             this.btn_Card.Name = "btn_Card";
             this.btn_Card.Size = new System.Drawing.Size(100, 40);
             this.btn_Card.TabIndex = 0;
@@ -59,7 +60,7 @@
             // btnWithdraw
             // 
             this.btnWithdraw.Enabled = false;
-            this.btnWithdraw.Location = new System.Drawing.Point(413, 58);
+            this.btnWithdraw.Location = new System.Drawing.Point(12, 104);
             this.btnWithdraw.Name = "btnWithdraw";
             this.btnWithdraw.Size = new System.Drawing.Size(100, 40);
             this.btnWithdraw.TabIndex = 2;
@@ -70,7 +71,7 @@
             // btnDeposit
             // 
             this.btnDeposit.Enabled = false;
-            this.btnDeposit.Location = new System.Drawing.Point(413, 104);
+            this.btnDeposit.Location = new System.Drawing.Point(118, 104);
             this.btnDeposit.Name = "btnDeposit";
             this.btnDeposit.Size = new System.Drawing.Size(100, 40);
             this.btnDeposit.TabIndex = 3;
@@ -80,7 +81,7 @@
             // 
             // btnStaff
             // 
-            this.btnStaff.Location = new System.Drawing.Point(413, 209);
+            this.btnStaff.Location = new System.Drawing.Point(224, 12);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(100, 40);
             this.btnStaff.TabIndex = 4;
@@ -91,7 +92,7 @@
             // btnBalance
             // 
             this.btnBalance.Enabled = false;
-            this.btnBalance.Location = new System.Drawing.Point(413, 150);
+            this.btnBalance.Location = new System.Drawing.Point(224, 104);
             this.btnBalance.Name = "btnBalance";
             this.btnBalance.Size = new System.Drawing.Size(100, 40);
             this.btnBalance.TabIndex = 5;
@@ -102,7 +103,7 @@
             // lblBalance
             // 
             this.lblBalance.AutoSize = true;
-            this.lblBalance.Location = new System.Drawing.Point(12, 58);
+            this.lblBalance.Location = new System.Drawing.Point(12, 48);
             this.lblBalance.Name = "lblBalance";
             this.lblBalance.Size = new System.Drawing.Size(0, 13);
             this.lblBalance.TabIndex = 6;
@@ -110,16 +111,28 @@
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(12, 104);
+            this.lblError.Location = new System.Drawing.Point(12, 85);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 7;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Enabled = false;
+            this.btnCancel.Location = new System.Drawing.Point(12, 150);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(312, 40);
+            this.btnCancel.TabIndex = 8;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 261);
+            this.ClientSize = new System.Drawing.Size(335, 200);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.btnBalance);
@@ -145,6 +158,7 @@
         private System.Windows.Forms.Button btnBalance;
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
 

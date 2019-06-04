@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DemoMobileATM_Library
+﻿namespace DemoMobileATM_Library
 {
     public class DebitCard : Account
     {
@@ -25,9 +23,11 @@ namespace DemoMobileATM_Library
 
             _balance += sum;
 
-            return $"Update Account set balance='{_balance}' where account_id='{_id}'" + "|"
-                   + "Insert into Transaction values " +
-                   $"(transaction_type='Deposit', transaction_date='{DateTime.Now.Day}', account_id='{_id}')";
+            return $"Update Account set balance='{_balance}' where account_id='{_id}'";
+            //+ "|"
+            //+ $"Insert into Transaction values (transaction_type='Deposit', transaction_date='{DateTime.Now.Day}', account_id='{_id}')"
+            //+ "Update Detail set detail_resource=detail_resource-5 where detail_id=1"
+            //+ "Update Detail set detail_resource=detail_resource-10 where detail_id=2";
         }
 
         public override string Withdraw(int sum)
@@ -44,8 +44,11 @@ namespace DemoMobileATM_Library
 
             _balance -= sum;
 
-            return $"Update Account set balance='{_balance}' where account_id='{_id}'" + "|"
-                   + "Insert into Transaction [(transaction_type, transaction_date, account_id)] {values ('Withdraw', " + $"{DateTime.Now.Day}, '{_id}')" + "}";
+            return $"Update Account set balance='{_balance}' where account_id='{_id}'";
+            //+ "|"
+            //+ "Insert into Transaction [(transaction_type, transaction_date, account_id)] {values ('Withdraw', " + $"{DateTime.Now.Day}, '{_id}')" + "}"
+            //+ "Update Detail set detail_resource=detail_resource-5 where detail_id=1"
+            //+ "Update Detail set detail_resource=detail_resource-10 where detail_id=2";
         }
     }
 }

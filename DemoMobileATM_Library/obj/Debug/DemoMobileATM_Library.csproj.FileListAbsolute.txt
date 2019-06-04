@@ -6,7 +6,6 @@ C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMobileAT
 C:\Users\Алексей Железной\source\repos\DemoMoblieATM\DemoMobileATM_Library\obj\Debug\DemoMobileATM_Library.pdb
 C:\Users\Алексей Железной\source\repos\GitHub\Programming-technology\DemoMobileATM_Library\bin\Debug\DemoMobileATM_Library.dll
 C:\Users\Алексей Железной\source\repos\GitHub\Programming-technology\DemoMobileATM_Library\bin\Debug\DemoMobileATM_Library.pdb
-C:\Users\Алексей Железной\source\repos\GitHub\Programming-technology\DemoMobileATM_Library\obj\Debug\DemoMobileATM_Library.csprojAssemblyReference.cache
 C:\Users\Алексей Железной\source\repos\GitHub\Programming-technology\DemoMobileATM_Library\obj\Debug\DemoMobileATM_Library.csproj.CoreCompileInputs.cache
 C:\Users\Алексей Железной\source\repos\GitHub\Programming-technology\DemoMobileATM_Library\obj\Debug\DemoMobileATM_Library.dll
 C:\Users\Алексей Железной\source\repos\GitHub\Programming-technology\DemoMobileATM_Library\obj\Debug\DemoMobileATM_Library.pdb

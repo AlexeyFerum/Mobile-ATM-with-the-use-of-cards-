@@ -11,6 +11,7 @@ namespace DemoMoblieATM
             get => _data;
             set => _data = value;
         }
+
         public InputNumForm()
         {
             InitializeComponent();

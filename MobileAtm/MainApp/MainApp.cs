@@ -33,7 +33,7 @@ namespace MainApp
 
             string res = connection.SendMessage('1', cardNumber);
 
-            if(res == "Exist")
+            if (res == "Exist")
             {
                 lblName.Text = "Welcome";
             }
@@ -45,7 +45,13 @@ namespace MainApp
 
         private void buttonStaff_Click(object sender, System.EventArgs e)
         {
-            
+            InputNumForm inputNumForm = new InputNumForm(this);
+            inputNumForm.ShowDialog();
+
+            var passwordText = inputNumForm.Data;
+
+            ServiceStaffForm serviceStaffForm = new ServiceStaffForm();
+            serviceStaffForm.ShowDialog();
         }
 
         private void btnWithdraw_Click(object sender, System.EventArgs e)

@@ -41,7 +41,7 @@
             // 
             // btn_Card
             // 
-            this.btn_Card.Location = new System.Drawing.Point(411, 29);
+            this.btn_Card.Location = new System.Drawing.Point(212, 56);
             this.btn_Card.Name = "btn_Card";
             this.btn_Card.Size = new System.Drawing.Size(94, 39);
             this.btn_Card.TabIndex = 0;
@@ -52,7 +52,7 @@
             // btnWithdraw
             // 
             this.btnWithdraw.Enabled = false;
-            this.btnWithdraw.Location = new System.Drawing.Point(411, 74);
+            this.btnWithdraw.Location = new System.Drawing.Point(12, 101);
             this.btnWithdraw.Name = "btnWithdraw";
             this.btnWithdraw.Size = new System.Drawing.Size(94, 39);
             this.btnWithdraw.TabIndex = 1;
@@ -63,7 +63,7 @@
             // btnDeposit
             // 
             this.btnDeposit.Enabled = false;
-            this.btnDeposit.Location = new System.Drawing.Point(411, 119);
+            this.btnDeposit.Location = new System.Drawing.Point(112, 101);
             this.btnDeposit.Name = "btnDeposit";
             this.btnDeposit.Size = new System.Drawing.Size(94, 39);
             this.btnDeposit.TabIndex = 2;
@@ -74,7 +74,7 @@
             // btnBalance
             // 
             this.btnBalance.Enabled = false;
-            this.btnBalance.Location = new System.Drawing.Point(411, 164);
+            this.btnBalance.Location = new System.Drawing.Point(212, 101);
             this.btnBalance.Name = "btnBalance";
             this.btnBalance.Size = new System.Drawing.Size(94, 39);
             this.btnBalance.TabIndex = 3;
@@ -84,7 +84,7 @@
             // 
             // btnStaff
             // 
-            this.btnStaff.Location = new System.Drawing.Point(411, 209);
+            this.btnStaff.Location = new System.Drawing.Point(212, 11);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(94, 39);
             this.btnStaff.TabIndex = 4;
@@ -95,38 +95,35 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(61, 29);
+            this.lblName.Location = new System.Drawing.Point(12, 9);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.Size = new System.Drawing.Size(0, 13);
             this.lblName.TabIndex = 5;
-            this.lblName.Text = "label1";
             // 
             // lblBalance
             // 
             this.lblBalance.AutoSize = true;
-            this.lblBalance.Location = new System.Drawing.Point(61, 96);
+            this.lblBalance.Location = new System.Drawing.Point(12, 42);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(35, 13);
+            this.lblBalance.Size = new System.Drawing.Size(0, 13);
             this.lblBalance.TabIndex = 6;
-            this.lblBalance.Text = "label2";
             // 
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(61, 184);
+            this.lblError.Location = new System.Drawing.Point(12, 74);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(35, 13);
+            this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 7;
-            this.lblError.Text = "label3";
             // 
             // btnEndWork
             // 
             this.btnEndWork.Enabled = false;
-            this.btnEndWork.Location = new System.Drawing.Point(411, 254);
+            this.btnEndWork.Location = new System.Drawing.Point(12, 155);
             this.btnEndWork.Name = "btnEndWork";
-            this.btnEndWork.Size = new System.Drawing.Size(94, 36);
+            this.btnEndWork.Size = new System.Drawing.Size(294, 36);
             this.btnEndWork.TabIndex = 8;
-            this.btnEndWork.Text = "End Working";
+            this.btnEndWork.Text = "Cancel";
             this.btnEndWork.UseVisualStyleBackColor = true;
             this.btnEndWork.Click += new System.EventHandler(this.btnEndWork_Click);
             // 
@@ -134,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 311);
+            this.ClientSize = new System.Drawing.Size(322, 207);
             this.Controls.Add(this.btnEndWork);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblBalance);

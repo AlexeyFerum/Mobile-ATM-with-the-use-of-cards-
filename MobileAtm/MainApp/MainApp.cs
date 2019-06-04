@@ -18,7 +18,6 @@ namespace MainApp
 
         }
 
-
         private void btn_Card_Click(object sender, System.EventArgs e)
         {
             (sender as Button).Enabled = false;

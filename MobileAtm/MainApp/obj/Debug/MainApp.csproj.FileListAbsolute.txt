@@ -28,3 +28,4 @@ D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Prog
 D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Library.pdb
 D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Server_Library.pdb
 D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.csproj.CopyComplete
+D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.InputNumForm.resources

@@ -115,28 +115,26 @@ namespace MobileATM_Server_Library
                         }
                         break;
                     }
-                case 1:           // Проверить наличие клиента
+                case 1:           
                     {
                         res = CheckClient(data[1]);
                         break;
                     }
-                case 2:           // Посмотреть баланс
+                case 2:           
                     {
                         res = client.GetBalance().ToString();
                         break;
                     }
                 case 3:
                     {
+                        res = Withdraw(data[1]);
                         break;
                     }
-                    //case 4:
-                    //    {
-                    //        break;
-                    //    }
-                    //case 5:
-                    //    {
-                    //        break;
-                    //    }
+                case 4:
+                    {
+                        res = Deposit(data[1]);
+                        break;
+                    }
             }
             return res;
         }
@@ -154,6 +152,18 @@ namespace MobileATM_Server_Library
                 Console.WriteLine("Client has created");   
             }
             return res;
+        }
+
+        private string Deposit(string amount)
+        {
+            db.AddTransaction("deposit", client.GetId());
+            return client.account.Deposit(Convert.ToDouble(amount), client.GetId());
+        }
+
+        private string Withdraw(string amount)
+        {
+            db.AddTransaction("withdraw", client.GetId());
+            return client.account.Withdraw(Convert.ToDouble(amount), client.GetId());
         }
 
         private Client CreateClient(string num)

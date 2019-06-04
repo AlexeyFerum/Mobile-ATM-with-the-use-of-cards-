@@ -4,3 +4,8 @@ D:\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Librar
 D:\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.csproj.CoreCompileInputs.cache
 D:\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.dll
 D:\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.pdb
+D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileAtm\MobileATM_Library\bin\Debug\MobileATM_Library.dll
+D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileAtm\MobileATM_Library\bin\Debug\MobileATM_Library.pdb
+D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.csproj.CoreCompileInputs.cache
+D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.dll
+D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileAtm\MobileATM_Library\obj\Debug\MobileATM_Library.pdb

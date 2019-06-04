@@ -87,5 +87,11 @@ namespace MobileATM_Server_Library
             return res;
         }
 
+        public void AddTransaction(string operation, int id)
+        {
+            string command = $"Insert into Transaction values (transaction_type='{operation}', transaction_date='{DateTime.Now.Day}', account_id='{id}')";
+            QueryDB(command);
+        }
+
     }
 }

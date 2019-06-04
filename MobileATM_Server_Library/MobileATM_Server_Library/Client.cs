@@ -6,7 +6,7 @@ namespace MobileATM_Server_Library
     {
         private string name;
         private int id;
-        private Account account;
+        public Account account;
 
         public string Name
         {
@@ -27,7 +27,7 @@ namespace MobileATM_Server_Library
 
         public double GetBalance()
         {
-            return account.;
+            return account.GetBalance();
         }
     }
 }

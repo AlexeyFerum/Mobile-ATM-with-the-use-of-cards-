@@ -29,5 +29,7 @@ namespace MobileATM_Server_Library
             return 0;
         }
 
+        public virtual string Withdraw(double sum, int id) => "Error";
+        public virtual string Deposit(double sum, int id) => "Error";
     }
 }

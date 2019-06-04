@@ -24,5 +24,10 @@ namespace MobileATM_Server_Library
             }
         }
 
+        public virtual double GetBalance()
+        {
+            return 0;
+        }
+
     }
 }

@@ -122,7 +122,7 @@ namespace MobileATM_Server_Library
                     }
                 case 2:           // Посмотреть баланс
                     {
-                        
+                        res = client.GetBalance().ToString();
                         break;
                     }
                 case 3:
@@ -154,11 +154,6 @@ namespace MobileATM_Server_Library
                 Console.WriteLine("Client has created");   
             }
             return res;
-        }
-
-        private string GetBalance()
-        {
-            return null;
         }
 
         private Client CreateClient(string num)

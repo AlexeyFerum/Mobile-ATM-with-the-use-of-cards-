@@ -44,6 +44,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="Arduino.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Connection.cs" />
     <Compile Include="CreditCard.cs" />
     <Compile Include="DebitCard.cs" />
     <Compile Include="Detail.cs" />

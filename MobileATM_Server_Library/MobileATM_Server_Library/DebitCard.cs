@@ -25,5 +25,10 @@ namespace MobileATM_Server_Library
         {
 
         }
+
+        public override double GetBalance()
+        {
+            return balance;
+        }
     }
 }

@@ -24,5 +24,10 @@ namespace MobileATM_Server_Library
             this.id = id;
             this.account = account;
         }
+
+        public double GetBalance()
+        {
+            return account.;
+        }
     }
 }

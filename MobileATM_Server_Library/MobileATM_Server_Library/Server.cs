@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Text;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
-using System.Collections.Generic;
+using System.Text;
 
 namespace MobileATM_Server_Library
 {
@@ -12,7 +12,9 @@ namespace MobileATM_Server_Library
         private IPAddress ipAddr;
         private IPEndPoint ipEndPoint;
         private Client client = null;
+        private ServiceStaff serviceStaff;
         private DB_Service db;
+        private Socket handler;
 
 
         public void StartWorking()
@@ -20,19 +22,19 @@ namespace MobileATM_Server_Library
             // Создаем сокет Tcp/Ip
             Socket sListener = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
+
             // Назначаем сокет локальной конечной точке и слушаем входящие сокеты
             try
             {
                 sListener.Bind(ipEndPoint);
                 sListener.Listen(10);
-
                 // Начинаем слушать соединения
                 while (true)
                 {
                     Console.WriteLine("Ожидаем соединение через порт {0}", ipEndPoint);
 
                     // Программа приостанавливается, ожидая входящее соединение
-                    Socket handler = sListener.Accept();
+                    handler = sListener.Accept();
 
                     WorkingWithClient(handler);
                 }
@@ -60,11 +62,11 @@ namespace MobileATM_Server_Library
         {
             bool done = false;
 
-            while(!done)
+            while (!done)
             {
                 string reply = GetData(handler);
 
-                if(handler != null)
+                if (reply != "Successfuly closed socket")
                 {
                     byte[] msg = Encoding.UTF8.GetBytes(reply);
                     handler.Send(msg);
@@ -107,6 +109,7 @@ namespace MobileATM_Server_Library
                             Console.WriteLine("Successfuly closed socket");
                             client = null;
                             Console.WriteLine("Client was deleted");
+                            handler = null;
                         }
                         catch (ObjectDisposedException ex)
                         {
@@ -115,12 +118,12 @@ namespace MobileATM_Server_Library
                         }
                         break;
                     }
-                case 1:           
+                case 1:
                     {
                         res = CheckClient(data[1]);
                         break;
                     }
-                case 2:           
+                case 2:
                     {
                         res = client.GetBalance().ToString();
                         break;
@@ -135,6 +138,23 @@ namespace MobileATM_Server_Library
                         res = Deposit(data[1]);
                         break;
                     }
+                case 5:
+                    {
+                        res = GetCondition();
+                        break;
+                    }
+                case 6:
+                    {
+                        SetCondition(data[1]);
+                        res = "Changed";
+                        break;
+                    }
+
+                case 7:
+                    {
+                        res = CheckServiceStaff(Convert.ToInt32(data[1]));
+                        break;
+                    }
             }
             return res;
         }
@@ -146,10 +166,10 @@ namespace MobileATM_Server_Library
             {
                 res = db.CheckClient(number);
             }
-            if(res == "Exist")
+            if (res == "Exist")
             {
                 client = CreateClient(number);
-                Console.WriteLine("Client has created");   
+                Console.WriteLine("Client has created");
             }
             return res;
         }
@@ -157,13 +177,27 @@ namespace MobileATM_Server_Library
         private string Deposit(string amount)
         {
             db.AddTransaction("deposit", client.GetId());
-            return client.account.Deposit(Convert.ToDouble(amount), client.GetId());
+            var res = client.account.Deposit(Convert.ToDouble(amount), client.GetId());
+
+            if (res == "OK")
+            {
+                db.UpdateDB($"Update Account set balance='{client.account.GetBalance()}' where account_id='{client.account.GetNumber()}'");
+            }
+
+            return res;
         }
 
         private string Withdraw(string amount)
         {
             db.AddTransaction("withdraw", client.GetId());
-            return client.account.Withdraw(Convert.ToDouble(amount), client.GetId());
+            var res = client.account.Withdraw(Convert.ToDouble(amount), client.GetId());
+
+            if (res == "OK")
+            {
+                db.UpdateDB($"Update Account set balance='{client.account.GetBalance()}' where account_id='{client.account.GetNumber()}'");
+            }
+
+            return res;
         }
 
         private Client CreateClient(string num)
@@ -183,7 +217,51 @@ namespace MobileATM_Server_Library
             }
             client = new Client(Convert.ToInt32(dataC[0]), dataC[1], account);
 
-            return null;
+            return client;
+        }
+
+        private string GetCondition()
+        {
+            return db.GetDetail(1) + "|" + db.GetDetail(2);
+        }
+
+        private void SetCondition(string cond)
+        {
+            string name = cond.Split('|')[0].Split(':')[0];
+            byte res = Convert.ToByte(cond.Split('|')[0].Split(':')[1]);
+            db.UpdateDB($"Update Detail set detail_resource='{res}' where name='{name}'");
+
+            name = cond.Split('|')[1].Split(':')[0];
+            res = Convert.ToByte(cond.Split('|')[1].Split(':')[1]);
+            db.UpdateDB($"Update Detail set detail_resource='{res}' where name='{name}'");
+        }
+
+        private string CheckServiceStaff(int password)
+        {
+            string res = "Error";
+            if (password < 10000)
+            {
+                res = db.CheckServiceStaff(password);
+            }
+            else
+            {
+                res = "Incorrect pin";
+            }
+            if (res == "Exist")
+            {
+                serviceStaff = CreateServiceStaff(password);
+                Console.WriteLine("Service Staff was created");
+            }
+            return res;
+        }
+
+        private ServiceStaff CreateServiceStaff(int password)
+        {
+            List<string> dataSS = db.GetServiceStaff(password);
+
+            serviceStaff = new ServiceStaff(Convert.ToInt32(dataSS[0]), dataSS[1], password);
+
+            return serviceStaff;
         }
     }
 }

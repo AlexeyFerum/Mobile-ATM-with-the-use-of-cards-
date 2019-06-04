@@ -1,5 +1,4 @@
-﻿using MobileATM_Server_Library;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -7,13 +6,12 @@ namespace MainApp
 {
     public partial class ServiceStaffForm : Form
     {
-        List<Detail> detailsList;
+        private Dictionary<string, double> _conditionDictionary;
 
-        private string _data;
-        public string Data
+        public ServiceStaffForm(Dictionary<string, double> conditionDictionary)
         {
-            get => _data;
-            set => _data = value;
+            InitializeComponent();
+            this._conditionDictionary = conditionDictionary;
         }
 
         public ServiceStaffForm()
@@ -21,37 +19,34 @@ namespace MainApp
             InitializeComponent();
         }
 
-        public ServiceStaffForm(List<Detail> list)
+        private void button1_Click(object sender, EventArgs e) // check device connection
         {
-            InitializeComponent();
-            detailsList = list;
+            textBox1.Text = "Check tape: " + _conditionDictionary["Check tape"].ToString() + "\r\n";
+            textBox1.Text += "Cartridge: " + _conditionDictionary["Cartridge"].ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Detail detail1 = detailsList[0];
-            Detail detail2 = detailsList[1];
-
-            textBox1.Text = $"{detail1.Name} " + $"{detail1.Resource} " + "\r\n";
-            textBox1.Text += $"{detail2.Name} " + $"{detail2.Resource} ";
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) // cancel
         {
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // repair
         {
-            if (radioButton1.Checked)
+            if (!radioButton1.Checked && !radioButton2.Checked)
             {
-                Data = "Update Detail set detail_resource=100 where detail_id=2";
+                textBox1.Text = "Choose detail to repair";
             }
             else
             {
-                if (radioButton2.Checked)
+                if (radioButton1.Checked) //check tape
                 {
-                    Data = "Update Detail set detail_resource=100 where detail_id=1"; ;
+                    _conditionDictionary["Check tape"] = 100;
+                    textBox1.Text = "Successfully repaired";
+                }
+                else
+                {
+                    _conditionDictionary["Cartridge"] = 100;
+                    textBox1.Text = "Successfully repaired";
                 }
             }
         }

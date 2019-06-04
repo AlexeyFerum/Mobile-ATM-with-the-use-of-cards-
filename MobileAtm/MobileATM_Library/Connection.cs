@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Text;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 
 namespace MobileATM_Library
 {
@@ -21,6 +21,7 @@ namespace MobileATM_Library
                 ipEndPoint = new IPEndPoint(ipAddr, 11000);
 
                 sender = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                sender.Connect(ipEndPoint);
             }
             catch (Exception ex)
             {
@@ -38,9 +39,8 @@ namespace MobileATM_Library
             byte[] bytes = new byte[1024];
 
             // Соединяем сокет с удаленной точкой
-            sender.Connect(ipEndPoint);
 
-            string message = command + data;
+            string message = command + ";" + data;
 
             byte[] msg = Encoding.UTF8.GetBytes(message);
 
@@ -57,8 +57,7 @@ namespace MobileATM_Library
         {
             // Освобождаем сокет
             sender.Shutdown(SocketShutdown.Both);
-            sender.Close();
+            //sender.Close();
         }
     }
-
 }

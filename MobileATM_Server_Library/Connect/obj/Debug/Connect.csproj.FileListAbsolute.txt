@@ -30,3 +30,14 @@ D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Prog
 D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csproj.CopyComplete
 D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.exe
 D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.pdb
+D:\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.exe.config
+D:\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.exe
+D:\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.pdb
+D:\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\MobileATM_Server_Library.dll
+D:\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\MobileATM_Server_Library.pdb
+D:\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\MobileATM_Server_Library.dll.config
+D:\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csprojAssemblyReference.cache
+D:\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csproj.CoreCompileInputs.cache
+D:\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csproj.CopyComplete
+D:\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.exe
+D:\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.pdb

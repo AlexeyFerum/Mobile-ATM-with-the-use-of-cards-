@@ -1,7 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data.Common;
-using System.Collections.Generic;
 
 namespace MobileATM_Server_Library
 {
@@ -62,11 +62,34 @@ namespace MobileATM_Server_Library
             return res;
         }
 
+        public string GetDetail(int id)
+        {
+            List<string> detail = QueryDB($"Select * from Detail where detail_id={id}");
+            return detail[1] + ":" + detail[2].ToString();
+        }
+
+        public string CheckServiceStaff(int password)
+        {
+            string command = "Select * from ServiceStaff where account_id = " + $"{password}";
+            List<string> res = QueryDB(command);
+            if (res.Count != 0)
+            {
+                return "Exist";
+            }
+            return "Doesn't exist";
+        }
+
+        public List<string> GetServiceStaff(int password)
+        {
+            List<string> serviceStaffList = QueryDB("Select * from ServiceStaff where account_id = " + $"{password}");
+            return serviceStaffList;
+        }
+
         public string CheckClient(string number)
         {
             string command = "Select * from Client where account_id = " + $"{number}";
             List<string> res = QueryDB(command);
-            if(res.Count != 0)
+            if (res.Count != 0)
             {
                 return "Exist";
             }
@@ -89,9 +112,16 @@ namespace MobileATM_Server_Library
 
         public void AddTransaction(string operation, int id)
         {
-            string command = $"Insert into Transaction values (transaction_type='{operation}', transaction_date='{DateTime.Now.Day}', account_id='{id}')";
-            QueryDB(command);
+            //string command = $"Insert into Transaction values (transaction_type='{operation}', transaction_date='{DateTime.Now.Day}', account_id='{id}')";
+            //QueryDB(command);
         }
 
+        public void UpdateDB(string commandText)
+        {
+            DbCommand command = factory.CreateCommand();
+            command.Connection = connection;
+            command.CommandText = commandText;
+            command.ExecuteNonQuery();
+        }
     }
 }

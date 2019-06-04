@@ -1,52 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MobileATM_Server_Library
+﻿namespace MobileATM_Server_Library
 {
     public class ServiceStaff
     {
-        private string name;
-        private string surname;
-        private short pin;
+        private int _id;
+        private string _name;
+        private int _password;
 
-        public string Name
+        public ServiceStaff(int staffId, string name, int password)
         {
-            get
-            {
-                return name;
-            }
-
-            private set
-            {
-                name = value;
-            }
+            _id = staffId;
+            _name = name;
+            _password = password;
         }
 
-        public string Surname
-        {
-            get
-            {
-                return surname;
-            }
-
-            private set
-            {
-                surname = value;
-            }
-        }
-
-        public ServiceStaff(string name, string surname, short pin)
-        {
-            this.name = name;
-            this.surname = surname;
-            this.pin = pin;
-        }
-
-        public bool isCorrectPin() { return true; }
-
-        public void Repair() { }
+        public int Id { get => _id; set => _id = value; }
+        public string Name { get => _name; set => _name = value; }
+        public int Password { get => _password; set => _password = value; }
     }
 }

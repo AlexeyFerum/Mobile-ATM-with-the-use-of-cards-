@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MobileATM_Server_Library
+﻿namespace MobileATM_Server_Library
 {
-    class DebitCard: Account
+    class DebitCard : Account
     {
         private double balance;
 
@@ -30,7 +24,8 @@ namespace MobileATM_Server_Library
 
             balance -= amount;
 
-            return $"Update Account set balance='{balance}' where account_id='{id}'";
+
+            return "OK"; //$"Update Account set balance='{balance}' where account_id='{id}'";
         }
 
         public override string Deposit(double amount, int id)
@@ -42,7 +37,7 @@ namespace MobileATM_Server_Library
 
             balance += amount;
 
-            return $"Update Account set balance='{balance}' where account_id='{id}'";
+            return "OK"; //$"Update Account set balance='{balance}' where account_id='{id}'";
         }
 
         public override double GetBalance()

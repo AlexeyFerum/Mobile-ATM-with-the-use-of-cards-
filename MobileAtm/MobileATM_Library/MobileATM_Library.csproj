@@ -41,16 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
     <Compile Include="Arduino.cs" />
-    <Compile Include="Client.cs" />
     <Compile Include="Connection.cs" />
-    <Compile Include="CreditCard.cs" />
-    <Compile Include="DebitCard.cs" />
     <Compile Include="Detail.cs" />
     <Compile Include="DeviceCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceStaff.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

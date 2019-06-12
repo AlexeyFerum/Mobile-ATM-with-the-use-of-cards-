@@ -41,3 +41,14 @@ D:\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csp
 D:\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csproj.CopyComplete
 D:\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.exe
 D:\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.pdb
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.exe.config
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.exe
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\Connect.pdb
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\MobileATM_Server_Library.dll
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\MobileATM_Server_Library.pdb
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\bin\Debug\MobileATM_Server_Library.dll.config
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csprojAssemblyReference.cache
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csproj.CoreCompileInputs.cache
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.csproj.CopyComplete
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.exe
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\Connect\obj\Debug\Connect.pdb

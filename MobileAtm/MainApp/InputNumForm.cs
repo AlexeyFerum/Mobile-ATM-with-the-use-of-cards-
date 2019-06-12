@@ -11,11 +11,13 @@ namespace MainApp
         public InputNumForm()
         {
             InitializeComponent();
+            _data = "";
         }
 
         public InputNumForm(MainApp mainForm)
         {
             InitializeComponent();
+            _data = "";
         }
 
         private void btnInsert_Click(object sender, EventArgs e)

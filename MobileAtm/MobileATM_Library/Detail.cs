@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MobileATM_Library
+﻿namespace MobileATM_Library
 {
     public class Detail
     {
         private string name;
-        public int resource;
+        public double resource;
 
-        public int Resource
+        public double Resource
         {
             get
             {
@@ -33,7 +27,7 @@ namespace MobileATM_Library
 
             private set
             {
-                name = value; 
+                name = value;
             }
         }
     }

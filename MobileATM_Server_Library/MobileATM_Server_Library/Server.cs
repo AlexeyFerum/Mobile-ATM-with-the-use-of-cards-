@@ -228,11 +228,11 @@ namespace MobileATM_Server_Library
         private void SetCondition(string cond)
         {
             string name = cond.Split('|')[0].Split(':')[0];
-            byte res = Convert.ToByte(cond.Split('|')[0].Split(':')[1]);
+            float res = float.Parse(cond.Split('|')[0].Split(':')[1]);
             db.UpdateDB($"Update Detail set detail_resource='{res}' where name='{name}'");
 
             name = cond.Split('|')[1].Split(':')[0];
-            res = Convert.ToByte(cond.Split('|')[1].Split(':')[1]);
+            res = float.Parse(cond.Split('|')[1].Split(':')[1]);
             db.UpdateDB($"Update Detail set detail_resource='{res}' where name='{name}'");
         }
 
@@ -249,7 +249,7 @@ namespace MobileATM_Server_Library
             }
             if (res == "Exist")
             {
-                serviceStaff = CreateServiceStaff(password);
+                //serviceStaff = CreateServiceStaff(password);
                 Console.WriteLine("Service Staff was created");
             }
             return res;

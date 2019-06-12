@@ -32,3 +32,21 @@ D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Prog
 D:\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Server_Library.dll.config
 D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.InputNumForm.resources
 D:\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.ServiceStaffForm.resources
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\bin\Debug\MainApp.exe.config
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\bin\Debug\MainApp.exe
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\bin\Debug\MainApp.pdb
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Library.dll
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Server_Library.dll
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Library.pdb
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Server_Library.pdb
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\bin\Debug\MobileATM_Server_Library.dll.config
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.csprojAssemblyReference.cache
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.InputNumForm.resources
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.MainApp.resources
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.Properties.Resources.resources
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.ServiceStaffForm.resources
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.csproj.GenerateResource.cache
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.csproj.CoreCompileInputs.cache
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.csproj.CopyComplete
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.exe
+D:\Технологии программирования\Programming-technology\MobileAtm\MainApp\obj\Debug\MainApp.pdb

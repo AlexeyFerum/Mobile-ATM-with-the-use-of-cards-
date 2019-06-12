@@ -11,3 +11,10 @@ D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Prog
 D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.dll
 D:\Документы\Аттестации\3 курс\6 семестр\Tp 4\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.pdb
 D:\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.dll.config
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.dll.config
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.dll
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\bin\Debug\MobileATM_Server_Library.pdb
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.csprojAssemblyReference.cache
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.csproj.CoreCompileInputs.cache
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.dll
+D:\Технологии программирования\Programming-technology\MobileATM_Server_Library\MobileATM_Server_Library\obj\Debug\MobileATM_Server_Library.pdb

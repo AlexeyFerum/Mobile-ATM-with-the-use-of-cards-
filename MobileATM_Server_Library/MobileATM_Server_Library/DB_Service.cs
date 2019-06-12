@@ -70,7 +70,7 @@ namespace MobileATM_Server_Library
 
         public string CheckServiceStaff(int password)
         {
-            string command = "Select * from ServiceStaff where account_id = " + $"{password}";
+            string command = "Select * from ServiceStaff where password= " + $"{password}";
             List<string> res = QueryDB(command);
             if (res.Count != 0)
             {
@@ -81,7 +81,7 @@ namespace MobileATM_Server_Library
 
         public List<string> GetServiceStaff(int password)
         {
-            List<string> serviceStaffList = QueryDB("Select * from ServiceStaff where account_id = " + $"{password}");
+            List<string> serviceStaffList = QueryDB("Select * from ServiceStaff where password= " + $"{password}");
             return serviceStaffList;
         }
 
@@ -120,7 +120,7 @@ namespace MobileATM_Server_Library
         {
             DbCommand command = factory.CreateCommand();
             command.Connection = connection;
-            command.CommandText = commandText;
+            command.CommandText = commandText.Replace(',', '.');
             command.ExecuteNonQuery();
         }
     }

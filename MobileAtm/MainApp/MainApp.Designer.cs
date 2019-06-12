@@ -37,114 +37,169 @@
             this.lblBalance = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.btnEndWork = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Card
             // 
-            this.btn_Card.Location = new System.Drawing.Point(212, 56);
+            this.btn_Card.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Card.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Card.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(208)))), ((int)(((byte)(222)))));
+            this.btn_Card.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Card.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_Card.Location = new System.Drawing.Point(934, 342);
             this.btn_Card.Name = "btn_Card";
-            this.btn_Card.Size = new System.Drawing.Size(94, 39);
+            this.btn_Card.Size = new System.Drawing.Size(400, 100);
             this.btn_Card.TabIndex = 0;
-            this.btn_Card.Text = "IncertCard";
-            this.btn_Card.UseVisualStyleBackColor = true;
+            this.btn_Card.Text = "Incert Card";
+            this.btn_Card.UseVisualStyleBackColor = false;
             this.btn_Card.Click += new System.EventHandler(this.btn_Card_Click);
             // 
             // btnWithdraw
             // 
+            this.btnWithdraw.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnWithdraw.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnWithdraw.Enabled = false;
-            this.btnWithdraw.Location = new System.Drawing.Point(12, 101);
+            this.btnWithdraw.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(208)))), ((int)(((byte)(222)))));
+            this.btnWithdraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWithdraw.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold);
+            this.btnWithdraw.Location = new System.Drawing.Point(34, 192);
             this.btnWithdraw.Name = "btnWithdraw";
-            this.btnWithdraw.Size = new System.Drawing.Size(94, 39);
+            this.btnWithdraw.Size = new System.Drawing.Size(400, 100);
             this.btnWithdraw.TabIndex = 1;
             this.btnWithdraw.Text = "Withdraw";
-            this.btnWithdraw.UseVisualStyleBackColor = true;
+            this.btnWithdraw.UseVisualStyleBackColor = false;
+            this.btnWithdraw.Visible = false;
             this.btnWithdraw.Click += new System.EventHandler(this.btnWithdraw_Click);
             // 
             // btnDeposit
             // 
+            this.btnDeposit.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDeposit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDeposit.Enabled = false;
-            this.btnDeposit.Location = new System.Drawing.Point(112, 101);
+            this.btnDeposit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(208)))), ((int)(((byte)(222)))));
+            this.btnDeposit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeposit.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold);
+            this.btnDeposit.Location = new System.Drawing.Point(34, 342);
             this.btnDeposit.Name = "btnDeposit";
-            this.btnDeposit.Size = new System.Drawing.Size(94, 39);
+            this.btnDeposit.Size = new System.Drawing.Size(400, 100);
             this.btnDeposit.TabIndex = 2;
             this.btnDeposit.Text = "Deposit";
-            this.btnDeposit.UseVisualStyleBackColor = true;
+            this.btnDeposit.UseVisualStyleBackColor = false;
+            this.btnDeposit.Visible = false;
             this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click);
             // 
             // btnBalance
             // 
+            this.btnBalance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBalance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBalance.Enabled = false;
-            this.btnBalance.Location = new System.Drawing.Point(212, 101);
+            this.btnBalance.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(208)))), ((int)(((byte)(222)))));
+            this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBalance.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold);
+            this.btnBalance.Location = new System.Drawing.Point(34, 42);
             this.btnBalance.Name = "btnBalance";
-            this.btnBalance.Size = new System.Drawing.Size(94, 39);
+            this.btnBalance.Size = new System.Drawing.Size(400, 100);
             this.btnBalance.TabIndex = 3;
             this.btnBalance.Text = "Check Balance";
-            this.btnBalance.UseVisualStyleBackColor = true;
+            this.btnBalance.UseVisualStyleBackColor = false;
+            this.btnBalance.Visible = false;
             this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
             // 
             // btnStaff
             // 
-            this.btnStaff.Location = new System.Drawing.Point(212, 11);
+            this.btnStaff.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStaff.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(208)))), ((int)(((byte)(222)))));
+            this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStaff.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaff.Location = new System.Drawing.Point(934, 42);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(94, 39);
+            this.btnStaff.Size = new System.Drawing.Size(400, 100);
             this.btnStaff.TabIndex = 4;
             this.btnStaff.Text = "Staff Mode";
-            this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.UseVisualStyleBackColor = false;
             this.btnStaff.Click += new System.EventHandler(this.buttonStaff_Click);
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(12, 9);
+            this.lblName.Font = new System.Drawing.Font("Microsoft JhengHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(18, 32);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(0, 13);
+            this.lblName.Size = new System.Drawing.Size(0, 35);
             this.lblName.TabIndex = 5;
             // 
             // lblBalance
             // 
             this.lblBalance.AutoSize = true;
-            this.lblBalance.Location = new System.Drawing.Point(12, 42);
+            this.lblBalance.Font = new System.Drawing.Font("Microsoft JhengHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBalance.Location = new System.Drawing.Point(18, 182);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(0, 13);
+            this.lblBalance.Size = new System.Drawing.Size(0, 35);
             this.lblBalance.TabIndex = 6;
+            this.lblBalance.Click += new System.EventHandler(this.lblBalance_Click);
             // 
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(12, 74);
+            this.lblError.Font = new System.Drawing.Font("Microsoft JhengHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.Location = new System.Drawing.Point(18, 432);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.Size = new System.Drawing.Size(0, 35);
             this.lblError.TabIndex = 7;
             // 
             // btnEndWork
             // 
+            this.btnEndWork.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEndWork.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEndWork.Enabled = false;
-            this.btnEndWork.Location = new System.Drawing.Point(12, 155);
+            this.btnEndWork.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(208)))), ((int)(((byte)(222)))));
+            this.btnEndWork.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEndWork.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold);
+            this.btnEndWork.Location = new System.Drawing.Point(34, 589);
             this.btnEndWork.Name = "btnEndWork";
-            this.btnEndWork.Size = new System.Drawing.Size(294, 36);
+            this.btnEndWork.Size = new System.Drawing.Size(1300, 100);
             this.btnEndWork.TabIndex = 8;
-            this.btnEndWork.Text = "Cancel";
-            this.btnEndWork.UseVisualStyleBackColor = true;
+            this.btnEndWork.Text = "Finish the service";
+            this.btnEndWork.UseVisualStyleBackColor = false;
+            this.btnEndWork.Visible = false;
             this.btnEndWork.Click += new System.EventHandler(this.btnEndWork_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.lblName);
+            this.panel1.Controls.Add(this.lblBalance);
+            this.panel1.Controls.Add(this.lblError);
+            this.panel1.Location = new System.Drawing.Point(475, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(422, 400);
+            this.panel1.TabIndex = 9;
             // 
             // MainApp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 207);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEndWork);
-            this.Controls.Add(this.lblError);
-            this.Controls.Add(this.lblBalance);
-            this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.btnBalance);
             this.Controls.Add(this.btnDeposit);
             this.Controls.Add(this.btnWithdraw);
             this.Controls.Add(this.btn_Card);
+            this.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "MainApp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MobileATM";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -159,6 +214,7 @@
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Button btnEndWork;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

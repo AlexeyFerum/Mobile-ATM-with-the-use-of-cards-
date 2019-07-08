@@ -57,6 +57,12 @@ namespace MainApp
             else
             {
                 lblName.Text = "There is no such client";
+                (sender as Button).Visible = false;
+                btnBalance.Visible = false;
+                btnDeposit.Visible = false;
+                btnWithdraw.Visible = false;
+                btnStaff.Visible = false;
+                btnEndWork.Visible = true;
             }
         }
 

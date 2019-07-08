@@ -28,7 +28,7 @@ namespace MobileATM_Library
                 bool t = true;
 
                 arduinoPort.Open();
-                Console.WriteLine("Attach card: ");
+                //Console.WriteLine("Attach card: ");
                 var data = arduinoPort.ReadLine();
 
                 while (t)
@@ -39,8 +39,16 @@ namespace MobileATM_Library
                         data = arduinoPort.ReadLine();
                 }
 
-                Console.WriteLine($"Received: {data}");
-                cardNumber = data;
+                //Console.WriteLine($"Received: {data}");  25648484854535752655068513
+                if (data.Length > 27)
+                {
+                    cardNumber = data.Remove(0,data.Length-27);
+                }
+                else
+                {
+                    cardNumber = data;
+                }
+                
             }
 
             return cardNumber;
